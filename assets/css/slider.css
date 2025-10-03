@@ -1,0 +1,68 @@
+/* Portrait Slider Styles */
+.portrait-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.portrait-slider .owl-item {
+    transition: transform 0.8s ease;
+}
+
+.portrait-slider .owl-item.active {
+    transform: scale(1);
+}
+
+.portrait-slider .owl-item.zoom-effect {
+    transform: scale(1.1);
+}
+
+.portrait-slider .slider-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portrait-slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+/* Dots Navigation */
+.portrait-slider .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portrait-slider .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.portrait-slider .owl-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.portrait-slider .owl-dot.active span {
+    background-color: var(--primary-color);
+}
+
+/* Animation overlay */
+.portrait-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    pointer-events: none;
+}

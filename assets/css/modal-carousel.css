@@ -1,0 +1,89 @@
+.carousel-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.modal-carousel {
+    position: relative;
+}
+
+.modal-carousel .item {
+    padding: 10px;
+}
+
+.modal-carousel .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.carousel-container:hover .nav-button {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.2) !important;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    background: var(--primary-color) !important;
+    transform: scale(1.2);
+}
+
+/* Animation pour les transitions */
+.modal-carousel .owl-item {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-carousel .owl-item.active {
+    opacity: 1;
+}

@@ -1,0 +1,114 @@
+.design-preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.design-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.design-carousel .owl-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.design-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.design-preview:hover .design-nav {
+    opacity: 1;
+}
+
+.design-nav button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.design-nav .prev-design {
+    left: 10px;
+}
+
+.design-nav .next-design {
+    right: 10px;
+}
+
+.design-nav button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Personnalisation des points de navigation du carousel */
+.design-carousel .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.design-carousel .owl-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.design-carousel .owl-dot.active {
+    background: var(--primary-color) !important;
+    transform: scale(1.2);
+}
+
+/* Animation de transition */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}

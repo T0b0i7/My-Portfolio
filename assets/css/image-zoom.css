@@ -1,0 +1,33 @@
+#imageZoomModal .modal-xl {
+    max-width: 95vw;
+}
+
+#imageZoomModal .modal-body {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageZoomModal .modal-header {
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#imageZoomModal .btn-close {
+    background-color: white;
+    opacity: 0.8;
+    margin: 1rem;
+}
+
+#imageZoomModal .btn-close:hover {
+    opacity: 1;
+}
+
+#zoomedImage {
+    max-height: 90vh;
+    object-fit: contain;
+}
