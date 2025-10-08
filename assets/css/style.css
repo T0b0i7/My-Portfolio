@@ -57,8 +57,8 @@ a:hover{
     height: 100%;
     background: #000 url(/assets/images/dark-bg.webp) 50% no-repeat;
     background-size: cover;
-    filter: brightness(50%);
     -webkit-filter: brightness(50%);
+    filter: brightness(50%);
     z-index: -1;
 }
 
@@ -88,8 +88,8 @@ a:hover{
     height: 100%;
     background: #fff url(/assets/images/light-bg.webp) 50% no-repeat;
     background-size: cover;
-    filter: brightness(90%);
     -webkit-filter: brightness(90%);
+    filter: brightness(90%);
     z-index: -1;
 }
 
@@ -115,16 +115,16 @@ a:hover{
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background: var(--vertical-gradient);
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
 }
 
 .social-icons a{
     color: var(--text-color);
     font-size: 18px;
     margin-right: 3px;
-    transition: var(--transition-default);
     -webkit-transition: var(--transition-default);
+    transition: var(--transition-default);
 }
 
 .social-icons a:hover{
@@ -140,8 +140,8 @@ a:hover{
     color: var(--btn-color);
     background-color: var(--primary-color);
     border: none;
-    transition: var(--transition-default);
     -webkit-transition: var(--transition-default);
+    transition: var(--transition-default);
 }
 
 .primary-bg-btn:hover{
@@ -220,14 +220,16 @@ a:hover{
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .theme-text{
     background: var(--secondary-gradient-color);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 .section-heading{
@@ -254,8 +256,8 @@ a:hover{
     display: block;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    animation: fadeOutPreloader 1s linear 1s forwards;
     -webkit-animation: fadeOutPreloader 1s linear 1s forwards;
+    animation: fadeOutPreloader 1s linear 1s forwards;
 }
 
 @keyframes fadeOutPreloader {
@@ -271,8 +273,8 @@ a:hover{
 
 #header{
     background: transparent;
-    transition: top 0.5s ease;
     -webkit-transition: top 0.5s ease;
+    transition: top 0.5s ease;
 }
 
 .fixed-top{
@@ -300,8 +302,8 @@ a:hover{
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
     -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .offcanvas{
@@ -373,8 +375,8 @@ a:hover{
 #hero .name {
     background: var(--primary-gradient-color);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 #hero .btn-showcase {
@@ -443,7 +445,7 @@ a:hover{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(/assets/images/portrait.png);
+        background-image: url(/assets/images/portraitgg.png);
     }
 
     .hero-content{
@@ -841,10 +843,10 @@ a:hover{
     width: 300px;
     position: absolute;
     z-index: -2;
-    box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
     -webkit-box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
-    transition-duration: .5s;
+    box-shadow: 2px 2px 0px inset var(--primary-color), -2px -2px 0px inset transparent;
     -webkit-transition-duration: .5s;
+    transition-duration: .5s;
 }
 
 .about-portrait:hover::before {
@@ -1134,8 +1136,8 @@ a:hover{
     background: rgba(144, 81, 227, .8);
     border-bottom: 1px solid rgba(144, 81, 227, .5);
     border-left: 1px solid rgba(144, 81, 227, .5);
+    -webkit-transform: skewY(-45deg);
     transform: skewY(-45deg);
-    -webkit-transform: skewY(-45deg);  
 }
 
 .testimonial .pic{

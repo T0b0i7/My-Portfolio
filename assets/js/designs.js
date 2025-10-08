@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Initialiser les sliders existants
-    $('.logo-slider').owlCarousel(sliderConfig);
-    $('.flyer-slider').owlCarousel(sliderConfig);
-    $('.branding-slider').owlCarousel(sliderConfig);
+    $('.logo-slider').owlCarousel(designSliderConfig);
+    $('.flyer-slider').owlCarousel(designSliderConfig);
+    $('.branding-slider').owlCarousel(designSliderConfig);
 
     // Gestion des modales de design
     const designModals = document.querySelectorAll('.design-modal');
