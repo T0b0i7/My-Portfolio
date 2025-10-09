@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Agustina';
-    src: url('/assets/fonts/Agustina.woff') format('woff');
+    src: url('../fonts/Agustina.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Dancing Script';
-    src: url('/assets/fonts/DancingScript-Medium.ttf') format('truetype');
+    src: url('../fonts/DancingScript-Medium.ttf') format('truetype');
 }
 
 
@@ -54,7 +54,7 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000 url(/assets/images/dark-bg.webp) 50% no-repeat;
+    background: #000 url('../images/dark-bg.webp') 50% no-repeat;
     background-size: cover;
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
@@ -85,7 +85,7 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff url(/assets/images/light-bg.webp) 50% no-repeat;
+    background: #fff url('../images/light-bg.webp') 50% no-repeat;
     background-size: cover;
     -webkit-filter: brightness(90%);
     filter: brightness(90%);
@@ -417,7 +417,7 @@ a:hover{
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url(/assets/images/portait2.png);
+    background-image: url('../images/portait2.png');
 }
 
 @media (max-width: 576px) {
@@ -445,7 +445,7 @@ a:hover{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(/assets/images/portraitgg.png);
+    background-image: url('../images/portraitgg.png');
     }
 
     .hero-content{
@@ -479,7 +479,7 @@ a:hover{
 #graphic-designs {
     padding: 90px 0;
     min-height: 100vh;
-    background-image: url(/assets/images/grid.png);
+    background-image: url('../images/grid.png');
     background-size: contain;
 }
 
