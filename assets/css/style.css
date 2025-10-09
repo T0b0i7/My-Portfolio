@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # Global Settings
 --------------------------------------------------------------*/
@@ -155,8 +154,8 @@ a:hover{
     color: var(--btn-color);
     background-color: none;
     border-color: var(--primary-color);
-    transition: var(--transition-default);
     -webkit-transition: var(--transition-default);
+    transition: var(--transition-default);
 }
 
 .primary-outline-btn:hover{
@@ -193,7 +192,8 @@ a:hover{
 }
 
 .in-progress{
-    text-wrap: nowrap;
+    overflow-wrap: nowrap; /* remplace text-wrap pour meilleure compatibilité */
+    white-space: nowrap;   /* ensure no wrap */
     background-color: rgba(255, 156, 9, 0.15);
     color: rgb(255, 156, 9);
 }
@@ -229,7 +229,7 @@ a:hover{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    color: transparent; /* standard fallback */
 }
 
 .section-heading{
@@ -254,8 +254,8 @@ a:hover{
     bottom: 0;
     left: 0;
     display: block;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     -webkit-animation: fadeOutPreloader 1s linear 1s forwards;
     animation: fadeOutPreloader 1s linear 1s forwards;
 }
@@ -278,8 +278,8 @@ a:hover{
 }
 
 .fixed-top{
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
     @media (max-width: 767px) {
@@ -291,8 +291,8 @@ a:hover{
     }
 
 #header .navbar{
-    backdrop-filter: 20px;
     -webkit-backdrop-filter: 20px;
+    backdrop-filter: 20px;
     padding: 15px 0;
 }
 
@@ -316,10 +316,10 @@ a:hover{
     top: 76.9px;
     left: 15px;
     right: 15px;
-    bottom: 15px; 
+    bottom: 15px;
     padding: 10px 15px;
-    transition: none;
     -webkit-transition: none;
+    transition: none;
     border: 2px solid var(--offcanvas-border-color);
 }
 
@@ -332,8 +332,8 @@ a:hover{
     position: relative;
     font-size: 15px;
     border-bottom: none;
-    transition: width 0.35s ease;
     -webkit-transition: width 0.35s ease;
+    transition: width 0.35s ease;
 }
 
 .navbar-nav > li > .nav-link.active::after {
@@ -354,8 +354,8 @@ a:hover{
     width: 0;
     height: 2px;
     background-image: var(--underline-gradient);
-    transition: width 0.35s ease;
     -webkit-transition: width 0.35s ease;
+    transition: width 0.35s ease;
 }
 
 .navbar-nav > li > .nav-link:hover::after {
@@ -383,12 +383,13 @@ a:hover{
     border-radius: 32px;
     border-color: #7042f88b;
     border-width: 1px;
-    backdrop-filter: blur(6px); 
     -webkit-backdrop-filter: blur(6px); 
+    backdrop-filter: blur(6px); 
+    -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
-    transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
     -webkit-transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
+    transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
 }
 
 #hero .btn-showcase i {
@@ -724,8 +725,8 @@ a:hover{
     justify-content: center;
     color: white !important;
     pointer-events: auto;
-    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .design-slider .owl-prev:hover,
@@ -779,10 +780,10 @@ a:hover{
     background-color: transparent;
     padding: 10px;
     border-radius: 24px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    backdrop-filter: blur(20px);
     -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
 }
 
 #things-i-love .circle-container {
@@ -851,8 +852,8 @@ a:hover{
 
 .about-portrait:hover::before {
     transform: translate(-23px,-23px);
-    transition-duration: .5s;
     -webkit-transition-duration: .5s;
+    transition-duration: .5s;
 }
 
 .about-portrait::after {
@@ -862,16 +863,16 @@ a:hover{
     width: 300px;
     position: absolute;
     z-index: -2;
-    box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
     -webkit-box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
-    transition-duration: .5s;
+    box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset var(--primary-color);
     -webkit-transition-duration: .5s;
+    transition-duration: .5s;
 }
 
 .about-portrait:hover::after {
     transform: translate(35px,30px);
-    transition-duration: .5s;
     -webkit-transition-duration: .5s;
+    transition-duration: .5s;
 }
 
 .about-portrait .pic{
@@ -879,8 +880,8 @@ a:hover{
     height: auto;
     border-radius: 0.5rem;
     object-fit: cover;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
     -webkit-box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 12px 8px 0px 0px #850dd5;
 }
 
 #about .bio{
@@ -920,10 +921,10 @@ a:hover{
     background-color: transparent;
     padding: 18px 0px;
     border-radius: 25px;
-    backdrop-filter: blur(300px);
     -webkit-backdrop-filter: blur(300px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    backdrop-filter: blur(300px);
     -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
 }
 
 .skill-image{
@@ -956,8 +957,8 @@ a:hover{
     background-color: transparent;
     padding: 18px 0px;
     border-radius: 25px;
-    backdrop-filter: blur(300px);
     -webkit-backdrop-filter: blur(300px);
+    backdrop-filter: blur(300px);
     box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
     -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
 }
@@ -997,10 +998,10 @@ a:hover{
     background-color: transparent;
     padding: 10px;
     border-radius: 24px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    backdrop-filter: blur(20px);
     -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
 }
 
 .project-card .title {
@@ -1017,8 +1018,8 @@ a:hover{
     width: 0;
     height: 2px;
     background-image: var(--underline-gradient);
-    transition: width 0.35s ease;
     -webkit-transition: width 0.35s ease;
+    transition: width 0.35s ease;
 }
 
 .project-card .title:hover::after {
@@ -1068,8 +1069,8 @@ a:hover{
     top: 0;
     left: 0;
     border-radius: inherit;
-    transition: opacity 0.3s ease;
     -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .project-card .banner-container:hover .overlay {
@@ -1121,8 +1122,8 @@ a:hover{
     padding: 30px 20px;
     border: 1px solid rgba(144, 81, 227, .5);
     border-left: 3px solid rgba(144, 81, 227, .8);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 /* Notch Icon for Testimonial Div */
@@ -1203,10 +1204,10 @@ a:hover{
     background-color: transparent;
     padding: 10px;
     border-radius: 24px;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    backdrop-filter: blur(20px);
     -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
 }
 
 .article-card .banner-container{
@@ -1251,8 +1252,8 @@ a:hover{
     width: 0;
     height: 2px;
     background-image: var(--underline-gradient);
-    transition: width 0.35s ease;
     -webkit-transition: width 0.35s ease;
+    transition: width 0.35s ease;
 }
 
 .article-card .read-more:hover::after {
@@ -1274,17 +1275,17 @@ a:hover{
     padding: 35px;
     border-radius: 15px;
     background-color: transparent;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    backdrop-filter: blur(20px);
     -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+    box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
 }
 
 .contact-form .form-control{
     padding: 0.775rem 1.05rem;
     background-color: transparent;
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .contact-form .form-control:focus{
@@ -1321,8 +1322,8 @@ a:hover{
     background: var(--primary-gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
-    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback for browsers without -webkit-text-fill-color */
 }
 
 /*--------- Back To Top ------------*/
@@ -1333,8 +1334,8 @@ a:hover{
     right: 10px;
     bottom: 0px;
     z-index: 999;
-    transition: var(--transition-default);
     -webkit-transition: var(--transition-default);
+    transition: var(--transition-default);
 }
 
 
