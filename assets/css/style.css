@@ -387,7 +387,6 @@ a:hover{
     backdrop-filter: blur(6px); 
     -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
-    -webkit-box-shadow: inset 0 -7px 11px rgba(141, 53, 229, .136);
     -webkit-transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
     transition: box-shadow .45s cubic-bezier(.6,.6,0,1);
 }
@@ -959,8 +958,8 @@ a:hover{
     border-radius: 25px;
     -webkit-backdrop-filter: blur(300px);
     backdrop-filter: blur(300px);
-    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
     -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
 }
 
 .tool-image{
@@ -1289,8 +1288,8 @@ a:hover{
 }
 
 .contact-form .form-control:focus{
-    box-shadow: none;
     -webkit-box-shadow: none;
+    box-shadow: none;
     border-color: #850dd5;
 }
 
@@ -1320,8 +1319,8 @@ a:hover{
 
 .copyright-text .heart-icon {
     background: var(--primary-gradient-color);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent; /* fallback for browsers without -webkit-text-fill-color */
 }
