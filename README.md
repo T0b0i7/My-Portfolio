@@ -135,7 +135,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👤 Contact
 
-- Website: [Portfolio](https://eabatti.netlify.app)
+- Website: [Portfolio](https://eucherabatti-portfolio.netlify.app/)
 - GitHub: [@T0b0i7](https://github.com/T0b0i7)
 
 ---
@@ -277,7 +277,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👤 Contact
 
-- Website: [Portfolio](https://eabatti.netlify.app)
+- Website: [Portfolio](https://eucherabatti-portfolio.netlify.app/)
 - GitHub: [@T0b0i7](https://github.com/T0b0i7)
 
 ---
